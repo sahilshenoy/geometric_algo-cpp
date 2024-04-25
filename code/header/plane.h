@@ -9,13 +9,17 @@ namespace ashmit{
 
         public:
             Plane(){}
-            Plane(Vector3f &_normal,float _constant):normal(_normal),d(_constant){}
+            Plane(Vector3f &_normal,float _constant):normal(_normal),d(_constant){
+                normal.normalize();
+            }
             Plane(Point3d& p1, Point3d& p2, Point3d& p3){
                 auto v12 = p2-p1;
+
                 auto v13 = p3-p1;
                 normal = crossProduct3D(v12,v13);
+                normal.normalize();
                 d = dotProduct(normal,p1);
-                
+
             }
     };
 }

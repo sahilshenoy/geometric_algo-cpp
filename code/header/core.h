@@ -15,4 +15,7 @@ static bool isEqualD(double x, double y){
 static bool _xor(bool x, bool y){
     return x^y;
 }
+static float RadianceToDegrees(float radiance) {
+	return radiance * 360 / (2 * M_PI);
+}
 }
