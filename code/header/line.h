@@ -12,9 +12,14 @@ namespace ashmit{
                 point=p1;
             }
 
-            Vector<coord_type,dim> getPoint();
-            Vector<coord_type,dim> getDir();
+            Vector<coord_type,dim> getPoint() const ;
+            Vector<coord_type,dim> getDir() const ;
     };
+
+
+    typedef Line<float, DIM2>Line2D;
+    typedef Line<float, DIM3>Line3D;
+
     template<class coord_type, size_t dim>
     inline Vector<coord_type, dim> Line(coord_type,dim)::getPoint()
     {
