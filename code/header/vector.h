@@ -169,4 +169,5 @@ namespace ashmit {
     }
     float crossProduct2D(Vector2f v1,Vector2f v2);
     Vector3f crossProduct3D(Vector3f v1, Vector3f v2);
+    float scalerTripleProduct(Vector3f v1, Vector3f v2, Vecto3f v3); 
 }

@@ -20,3 +20,10 @@ float ashmit::AngleLines3D(const Line3D&l1, const Line3D&l2){
     auto theta = acos(fabs(dot)/(l1_mag*l2_mag));
     return RadianceToDegrees(theta);
 }
+
+float ashmit::AngleLinesPlane(const Line3D& l1, const Planef&p1){
+    auto dot = dotProduct(l1.getDir(), p.getNormal());
+    auto theta = acos(fabs(dot));
+    auto angle = RadianceToDegrees(theta);
+    return 90-angle; 
+}

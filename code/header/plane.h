@@ -21,5 +21,11 @@ namespace ashmit{
                 d = dotProduct(normal,p1);
 
             }
+
+            Vector3f getNormal() const {
+                return normal;
+            }
     };
+
+    typedef Plane<float> Planef;
 }

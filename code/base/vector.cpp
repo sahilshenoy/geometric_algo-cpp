@@ -12,3 +12,8 @@ ashmit::Vector3f ashmit::crossProduct3D(Vector3f v1, Vector3f v2){
 
     return Vector3f(_x,_y,_z);
 }
+
+float ashmit::scalerTripleProduct(Vector3f v1,Vector3f v2, Vector3f v3){
+    auto bc_cross = crossProduct3D(v2,v3);
+    return dotProduct(v1,bc_cross);
+}

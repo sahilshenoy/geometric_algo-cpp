@@ -14,4 +14,12 @@ namespace ashmit {
     bool rightOrBeyond(const Point2d& a, const Point2d& b, const Point2d &c);
     // to determine whether the point C is between
     bool leftOrBetween(const Point2d &a, const Point2d &b, const Point2d &c);
+    // colinear test for points
+    bool colinear(const Point3d&a, const Point3d&b ,const Point3d&c);
+    // collinear test for vectors
+    bool colinear(const Vector3f&v1, const Vector3f& v2);
+    // coplanar for points
+    bool colinear(const Point3d&a, const Point3d&b ,const Point3d&c, const Point3d&d);
+    // collinear for vectors
+    bool colinear(const Vector3f&v1, const Vector3f& v2, const Vector3f&c);
 }

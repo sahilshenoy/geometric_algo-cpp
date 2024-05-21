@@ -59,3 +59,16 @@ bool ashmit::leftOrBetween(const Point3d&a,const Point3d&b, const Point3d&c){
     int position = orientation2D(a,b,c);
     return (position == RELATIVE_POSITION::LEFT || RELATIVE_POSITION::BETWEEN)
 }
+
+bool ashmit::colinear(const Vector3f&v1,const Vector3f&v2){
+    float value = scalerTripleProduct(a,b,c);
+
+    return isEqualD(value,ZERO);
+}
+
+bool ashmit::coplanar(const Point3d&a, const Point3d&b, const Point3d&c,const Point3d&d){
+    auto AB = a-b;
+    auto AC = a-d;
+    auto AD = d-a;
+    return coplanar(AB,AC,AD);
+}
