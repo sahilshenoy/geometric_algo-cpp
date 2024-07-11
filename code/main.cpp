@@ -32,6 +32,25 @@ int main() {
         }
         std::cout << std::endl;
     }*/
+   // LINE SEGEMENT INTERSECTION 
+   /*
+   LineSegment segment1(Point(1, 1), Point(10, 1));
+    LineSegment segment2(Point(1, 2), Point(10, 2));
 
+    if (segment1.intersects(segment2)) {
+        std::cout << "The segments intersect." << std::endl;
+    } else {
+        std::cout << "The segments do not intersect." << std::endl;
+    }
+
+    LineSegment segment3(Point(10, 0), Point(0, 10));
+    LineSegment segment4(Point(0, 0), Point(10, 10));
+
+    if (segment3.intersects(segment4)) {
+        std::cout << "The segments intersect." << std::endl;
+    } else {
+        std::cout << "The segments do not intersect." << std::endl;
+    }
+   */
     return 0;
 }
