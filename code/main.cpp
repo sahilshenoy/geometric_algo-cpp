@@ -52,5 +52,21 @@ int main() {
         std::cout << "The segments do not intersect." << std::endl;
     }
    */
+  // PLANE SWEEP ALGORITHM
+  /*    std::vector<LineSegment> segments = {
+        LineSegment(Point(1, 1), Point(10, 1)),
+        LineSegment(Point(1, 2), Point(10, 2)),
+        LineSegment(Point(10, 0), Point(0, 10)),
+        LineSegment(Point(0, 0), Point(10, 10))
+    };
+
+    PlaneSweep sweep(segments);
+    auto intersections = sweep.findIntersections();
+
+    for (const auto& intersection : intersections) {
+        std::cout << "Intersection between segments: "
+                  << "(" << intersection.first.x << ", " << intersection.first.y << ") and "
+                  << "(" << intersection.second.x << ", " << intersection.second.y << ")" << std::endl;
+    }*/
     return 0;
 }
