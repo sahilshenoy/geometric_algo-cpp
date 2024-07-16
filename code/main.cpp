@@ -68,5 +68,19 @@ int main() {
                   << "(" << intersection.first.x << ", " << intersection.first.y << ") and "
                   << "(" << intersection.second.x << ", " << intersection.second.y << ")" << std::endl;
     }*/
+   // DCEL REPRESENTATION 
+    /*dcel.addVertex(0, 0);
+    dcel.addVertex(1, 0);
+    dcel.addVertex(1, 1);
+    dcel.addVertex(0, 1);
+
+    // Adding edges
+    dcel.addEdge(dcel.vertices[0], dcel.vertices[1]);
+    dcel.addEdge(dcel.vertices[1], dcel.vertices[2]);
+    dcel.addEdge(dcel.vertices[2], dcel.vertices[3]);
+    dcel.addEdge(dcel.vertices[3], dcel.vertices[0]);
+
+    // Printing the DCEL structure
+    dcel.printDCEL();*/
     return 0;
 }
