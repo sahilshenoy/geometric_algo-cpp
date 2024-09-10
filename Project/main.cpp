@@ -21,10 +21,10 @@ int main() {
     std::chrono::duration<double> elapsed = end - start;
 
     std::cout << "Time taken: " << elapsed.count() << " seconds" << std::endl;
-    
+
     // POLYGON PARITIONING BY EAR CLIPPING METHOD
     std::vector<Point> points = {
-        {0, 0}, {5, 0}, {6, 2}, {3, 5}, {0, 3}
+        {1, 1}, {4, 1}, {6, 3}, {5, 6}, {3, 5}, {1, 4}
     };
 
     Polygon polygon(points);
