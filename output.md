@@ -7,7 +7,7 @@ Execution of Kruskal's MST Algorithm using **Parallel** and **Series** approache
 - **Series**: Simpler execution, predictable performance for smaller datasets.
 
 ## 2. MST Cost
-- **Parallel**: MST cost - **28**.
+- **Parallel**: MST cost - **23**.
 - **Series**: MST cost - **23**.
 
 ## 3. Concurrency
@@ -207,9 +207,9 @@ findParent: Node 2 is its own parent.
 
 unionByRank: Both nodes have the same rank. Attaching node 2 under node 2 and increasing the rank.
 
-spanningTree: Minimum Spanning Tree cost is 28
+spanningTree: Minimum Spanning Tree cost is 23
 
-The cost of the Minimum Spanning Tree is: 28
+The cost of the Minimum Spanning Tree is: 23
 
 ./mst_parallel  0.02s user 0.12s system 0% cpu 1:01.63 total
 ```

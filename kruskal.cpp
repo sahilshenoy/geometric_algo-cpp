@@ -27,12 +27,11 @@ bool threadSafePop(pair<int, pair<int, int>>& edge) {
 }
 
 int findParent(int u, vector<int>& parent) {
-    logFindParent(u);
     while (u != parent[u]) {
+        #pragma omp atomic write
         parent[u] = parent[parent[u]];  // Path compression
         u = parent[u];
     }
-    logParent(u, true);
     return u;
 }
 
